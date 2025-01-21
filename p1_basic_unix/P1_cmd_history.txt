@@ -1,0 +1,39 @@
+  183  mkdir ps1
+  184  cd ps1
+  185  mkdir p1_basic_unix
+  186  cd p1_basic_unix
+  187  touch test_1.txt
+  188  rm test_1.txt
+  189  mkdir test
+  190  cd test
+  191  mkdir basic
+  192  cat test_1.txt
+  193  cd basic
+  194  touch test_1.txt
+  195  touch test_2.txt
+  196  touch test_3.txt
+  197  cd ps1
+  198  cd /root/Desktop/host/ps1
+  199  echo "Ben Zeng 2025-01-16" > /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_1.txt
+  200  cat /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_1.txt
+  201  ls -l /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_1.txt > /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_2.txt
+  202  cat /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_2.txt
+  203  ls
+  204  cd p1_basic_unix
+  205  ls
+  206  ls -l test/basic/test_1.txt > test/basic/test_2.txt 
+  207  chmod +x test/basic/test_1.txt
+  208  ls -l test/basic/test_1.txt >> test/basic/test_2.txt 
+  209  touch P1_cmd_history.txt
+  210  history > P1_cmd_history.txt 
+  211  cd ps1/p1_basic_unix
+  212  grep "statistics" src/exe/demo_1.txt | echo >> grep_stat_demo1.txt
+  213  grep "statistics" src/exe/demo_1.txt
+  214  grep "statistics" src/exe/demo_1.txt >> grep_stat_demo1.txt
+  215  mkdir src/utilities
+  216  mv grep_stat_demo1.txt src/utilities
+  217  grep -r "statistics" >> grep_stat_all.txt
+  218  find . -name "*.txt" >> test/basic/test_3.txt
+  219  find * -type f -name "*.txt" -exec grep -H "statistics" {} \;
+  220  history >> P1_cmd_history.txt
+  221  history >> P1_cmd_history.txt

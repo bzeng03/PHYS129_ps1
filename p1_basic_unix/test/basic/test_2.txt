@@ -1,0 +1,2 @@
+-rw-r--r-- 1 root root 20 Jan 17 00:32 test/basic/test_1.txt
+-rwxr-xr-x 1 root root 20 Jan 17 00:32 test/basic/test_1.txt

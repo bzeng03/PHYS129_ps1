@@ -1,0 +1,161 @@
+  184  cd ps1
+  185  mkdir p1_basic_unix
+  186  cd p1_basic_unix
+  187  touch test_1.txt
+  188  rm test_1.txt
+  189  mkdir test
+  190  cd test
+  191  mkdir basic
+  192  cat test_1.txt
+  193  cd basic
+  194  touch test_1.txt
+  195  touch test_2.txt
+  196  touch test_3.txt
+  197  cd ps1
+  198  cd /root/Desktop/host/ps1
+  199  echo "Ben Zeng 2025-01-16" > /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_1.txt
+  200  cat /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_1.txt
+  201  ls -l /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_1.txt > /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_2.txt
+  202  cat /root/Desktop/host/ps1/p1_basic_unix/test/basic/test_2.txt
+  203  ls
+  204  cd p1_basic_unix
+  205  ls
+  206  ls -l test/basic/test_1.txt > test/basic/test_2.txt 
+  207  chmod +x test/basic/test_1.txt
+  208  ls -l test/basic/test_1.txt >> test/basic/test_2.txt 
+  209  touch P1_cmd_history.txt
+  210  history > P1_cmd_history.txt 
+  211  cd ps1
+  212  cd p1_basic_unix
+  213  wget https://zhwangs.github.io/UCSB-comp-phys/data/problem_set/P1_B.tar.gz
+  214  tar -xvf P1_B.tar.gz
+  215  mv P1_B/example.sh p1_basic_unix
+  216  mv P1_basic_unix example.sh
+  217  mv P1_B/example1.txt demo_1.txt
+  218  mv P1_B/example2.txt demo_2.txt
+  219  mv demo_1.txt P1_B
+  220  mv demo_2.txt P2_B
+  221  mv P2_B demo_2.txt
+  222  mv demo_2.txt P1_B
+  223  mkdir src/exe
+  224  mkdir /src/exe
+  225  mkdir src
+  226  mkdir src/exe
+  227  mv P1_B/demo_1.txt src/exe
+  228  mkdir cache
+  229  mkdir cache/data
+  230  mkdir cache/data/tables
+  231  mv P1_B/demo_2.txt cache/data/tables
+  232  rmdir P1_B
+  233  ln -s src/exe/demo_1.txt demo_link
+  234  alias ll="ls -l"
+  235  history >> P1_cmd_history.txt
+  236  cd ps1/p1_basic_unix
+  237  grep "statistics" src/exe/demo_1.txt
+  238  grep "statistics" | sort >  grep_stat_demo1.txt
+  239  cd ps1/p1_basic_unix
+  240  tar -czf p1_basic_unix.tar.gz p1_basic_unix
+  241  cd ..
+  242  tar -czf p1_basic_unix.tar.gz p1_basic_unix
+  243  mkdir Archine_P1
+  244  mv p1_basic_unix.tar.gz Archive_P1
+  245  mv p1_basic_unix.tar.gz /Archive_P1
+  246  grep "statistics" src/exe/demo_1.txt | echo >> grep_stat_demo1.txt
+  247  grep "statistics" src/exe/demo_1.txt | echo >> grep_stat_demo1.txt
+  248  cd src
+  249  cd ps1/p1_basic_unix
+  250  grep "statistics" src/exe/demo_1.txt | echo >> grep_stat_demo1.txt
+  251  grep "statistics" src/exe/demo_1.txt
+  252  grep "statistics" src/exe/demo_1.txt >> grep_stat_demo1.txt
+  253  mkdir src/utilities
+  254  mv grep_stat_demo1.txt src/utilities
+  255  grep -r "statistics" >> grep_stat_all.txt
+  256  find . -name "*.txt" >> test/basic/test_3.txt
+  257  find * -type f -name "*.txt" -exec grep -H "statistics" {} \;
+  258  history >> P1_cmd_history.txt
+  259  history >> P1_cmd_history.txt
+  260  cd ps1
+  261  cd ..
+  262  cd ..
+  263  cd host
+  264  cd /
+  265  list
+  266  l
+  267  ls
+  268  cd root
+  269  ls
+  270  cd Desktop
+  271  ls
+  272  cd host
+  273  ls
+  274  cd ps1
+  275  cd Archive_P1
+  276  sha256sum p1_basic_unix.tar.gz
+  277  git init
+  278  git branch -M main
+  279  git branch -m main
+  280  git checkout -b main
+  281  git add .
+  282  git commit -m "init"
+  283  git remote add origin https://github.com/bzeng03/PHYS129_ps1.git
+  284  git push -u origin main
+  285  git clone https://github.com/bzeng03/P2.git
+  286  cd P2
+  287  find Problem1 -type f -exec rm {} +
+  288  nano file_remove.sh
+  289  touch file_remove.sh
+  290  cd Problem1/electron_sacttering_data
+  291  cd Problem1/electron_scattering_data
+  292  touch separate.sh
+  293  cd ps1
+  294  git clone https://github.com/bzeng03/P2.git
+  295  find P2  -maxdepth 1 -type f -exec rm -f {} +
+  296  find P2/Problem1 -maxdepth 1 -type f -exec rm -f {} +
+  297  cd P2
+  298  touch file_remove.sh
+  299  cd Problem1/electron_scattering_data
+  300  touch separate_files.sh
+  301  chmod +x separate_files.sh
+  302  separate_files.sh
+  303  ./separate_files.sh
+  304  cd \ps1
+  305  cd ..
+  306  cd ..
+  307  cd ..
+  308  mkdir Archive_P2
+  309  tar -czf p2.tar.gz
+  310  tar -czf p2.tar.gz P2
+  311  mv p2.tar.gz Archive_P2
+  312  cd Archive_P2
+  313  sha256sum p2.tar.gz
+  314  cd ..
+  315  sha256sum Archive_P2/p2.tar.gz >> sha25sum_problem_set.txt
+  316  cd P2
+  317  history >> P2_cmd_history.txt
+  318  cd ..
+  319  tar -czf p2.tar.gz P2
+  320  mv p2.tar.gz Archive_P2
+  321  cd ps1
+  322  cd P2
+  323  cd ..
+  324  tar -czf p2.tar.gz P2
+  325  cd Archive_p1
+  326  cd ..
+  327  cd Archive_P1
+  328  cd ..
+  329  sha256sum Archive_P1/p1_basic_unix.tar.gz >> sha25sum_problem_set.txt
+  330  cd ps1
+  331  touch history.txt
+  332  mkdir p3
+  333  cd p3
+  334  touch number_conversion.sh
+  335  cd ..
+  336  history >> history.txt
+  337  history tail -7 >> history.txt
+  338  history | tail -8 >> history.txt
+  339  cd ..
+  340  cd ps1
+  341  mkdir Archive_P3
+  342  tar -czf p3.tar.gz p3
+  343  mv p3.tar.gz Archive_P3
+  344  sha256sum Archive_P3/p3.tar.gz >> sha25sum_problem_set.txt
