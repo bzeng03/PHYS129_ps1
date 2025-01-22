@@ -166,3 +166,28 @@
   402  Problem_3/number_conversion.sh >> Problem_3/conversion_result.txt
   403  history | tail -3 >> history.txt
 
+  478  cd PHYS_129_git_example
+  479  ls
+  480  cd PHYS129_git_example
+  481  git add .
+  482  git commit -m "merge"
+  483  git push origin main
+  484  git push origin feature_branch
+  485  git checkout main
+  486  git merge feature_branch
+  487  git add .
+  488  git commit -m "merge"
+  489  git push origin main
+  490  git pull origin main
+  491  git pull origin feature_branch
+  492  git checkout feature_branch
+  493  git checkout main
+  494  git merge feature_branch
+  495  echo "hello world!" >> README.md
+  496  git add .
+  497  git commit -m "hello world"
+  498  git push origin main
+  499  git merge feature_branch
+  500  git pull origin main
+  501  cd ..
+  502  history | tail -25 >> ps1/history.txt
