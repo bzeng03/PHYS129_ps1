@@ -1,0 +1,25 @@
+  260  cd ps1
+  261  git clone https://github.com/bzeng03/P2.git
+  262  find P2  -maxdepth 1 -type f -exec rm -f {} +
+  263  find P2/Problem1 -maxdepth 1 -type f -exec rm -f {} +
+  264  cd P2
+  265  touch file_remove.sh
+  266  cd Problem1/electron_scattering_data
+  267  touch separate_files.sh
+  268  chmod +x separate_files.sh
+  269  separate_files.sh
+  270  ./separate_files.sh
+  271  cd \ps1
+  272  cd ..
+  273  cd ..
+  274  cd ..
+  275  mkdir Archive_P2
+  276  tar -czf p2.tar.gz
+  277  tar -czf p2.tar.gz P2
+  278  mv p2.tar.gz Archive_P2
+  279  cd Archive_P2
+  280  sha256sum p2.tar.gz
+  281  cd ..
+  282  sha256sum Archive_P2/p2.tar.gz >> sha25sum_problem_set.txt
+  283  cd P2
+  284  history >> P2_cmd_history.txt
