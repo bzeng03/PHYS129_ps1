@@ -162,3 +162,6 @@
   384  sha256sum p3/p3.tar.gz >> sha25sum_problem_set.txt
   385  sha256sum Archive_P3/p3.tar.gz >> sha25sum_problem_set.txt
   386  history | tail -13 >> history.txt
+  401  Problem_3/number_conversion.sh >> Problem_3/conversion_result.txt
+  402  Problem_3/number_conversion.sh >> Problem_3/conversion_result.txt
+  403  history | tail -3 >> history.txt

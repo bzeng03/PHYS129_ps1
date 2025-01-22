@@ -1,0 +1,8 @@
+Enter a decimal number (less than 100,000):
+Decimal: 5
+Binary: 101
+Hexadecimal: 5
+Enter a decimal number (less than 100,000):
+Decimal: 1000
+Binary: 1111101000
+Hexadecimal: 3E8
