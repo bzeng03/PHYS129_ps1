@@ -165,3 +165,16 @@
   401  Problem_3/number_conversion.sh >> Problem_3/conversion_result.txt
   402  Problem_3/number_conversion.sh >> Problem_3/conversion_result.txt
   403  history | tail -3 >> history.txt
+  410  cd ps1
+  411  git checkout -b feature_branch
+  412  touch README.md
+  413  echo "hello world!" >> README.md
+  414  git add .
+  415  git commit -m "hello world"
+  416  git push -u origin feature_branch
+  417  git checkout main
+  418  git merge feature_branch
+  419  git log --oneline
+  420  git push -u origin main
+  421  git pull origin main
+  422  history | tail -13 >> history.txt
