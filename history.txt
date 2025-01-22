@@ -147,15 +147,18 @@
   330  cd ps1
   331  touch history.txt
   332  mkdir p3
-  333  cd p3
-  334  touch number_conversion.sh
-  335  cd ..
-  336  history >> history.txt
-  337  history tail -7 >> history.txt
-  338  history | tail -8 >> history.txt
-  339  cd ..
-  340  cd ps1
-  341  mkdir Archive_P3
-  342  tar -czf p3.tar.gz p3
-  343  mv p3.tar.gz Archive_P3
-  344  sha256sum Archive_P3/p3.tar.gz >> sha25sum_problem_set.txt
+
+
+  374  mkdir p3
+  375  touch number_conversion.sh
+  376  mv number_conversion.sh p3
+  377  chmod +x p3/number_conversion.sh
+  378  p3/number_conversion.sh
+  379  p3/number_conversion.sh
+  380  tar -czf p3.tar.gz p3
+  381  mv p3.tar.gz p3
+  382  mkdir Archive_P3
+  383  cp p3/p3.tar.gz Archive_P3
+  384  sha256sum p3/p3.tar.gz >> sha25sum_problem_set.txt
+  385  sha256sum Archive_P3/p3.tar.gz >> sha25sum_problem_set.txt
+  386  history | tail -13 >> history.txt
